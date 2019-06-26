@@ -1,0 +1,7 @@
+C:\Users\Lexi\Desktop\C#\Deliverable 1 - Currency Converter\Deliverable 1 - Currency Converter\bin\Debug\Deliverable 1 - Currency Converter.exe.config
+C:\Users\Lexi\Desktop\C#\Deliverable 1 - Currency Converter\Deliverable 1 - Currency Converter\bin\Debug\Deliverable 1 - Currency Converter.exe
+C:\Users\Lexi\Desktop\C#\Deliverable 1 - Currency Converter\Deliverable 1 - Currency Converter\bin\Debug\Deliverable 1 - Currency Converter.pdb
+C:\Users\Lexi\Desktop\C#\Deliverable 1 - Currency Converter\Deliverable 1 - Currency Converter\obj\Debug\Deliverable 1 - Currency Converter.csprojAssemblyReference.cache
+C:\Users\Lexi\Desktop\C#\Deliverable 1 - Currency Converter\Deliverable 1 - Currency Converter\obj\Debug\Deliverable 1 - Currency Converter.csproj.CoreCompileInputs.cache
+C:\Users\Lexi\Desktop\C#\Deliverable 1 - Currency Converter\Deliverable 1 - Currency Converter\obj\Debug\Deliverable 1 - Currency Converter.exe
+C:\Users\Lexi\Desktop\C#\Deliverable 1 - Currency Converter\Deliverable 1 - Currency Converter\obj\Debug\Deliverable 1 - Currency Converter.pdb
