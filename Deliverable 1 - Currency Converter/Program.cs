@@ -22,7 +22,6 @@ namespace Deliverable_1__Currency_Format_Converter
                 string firstNumberString = Console.ReadLine();
                 if (Double.TryParse(firstNumberString, out firstNumber))
                 {
-                    Console.WriteLine(firstNumber);
                     repeat1 = false;
                 }
                 else
@@ -37,7 +36,6 @@ namespace Deliverable_1__Currency_Format_Converter
                 string secondNumberString = Console.ReadLine();
                 if (Double.TryParse(secondNumberString, out secondNumber))
                 {
-                    Console.WriteLine(secondNumber);
                     repeat2 = false;
                 }
                 else
@@ -52,7 +50,6 @@ namespace Deliverable_1__Currency_Format_Converter
                 string thirdNumberString = Console.ReadLine();
                 if (Double.TryParse(thirdNumberString, out thirdNumber))
                 {
-                    Console.WriteLine(thirdNumber);
                     repeat3 = false;
                 }
                 else
@@ -65,28 +62,25 @@ namespace Deliverable_1__Currency_Format_Converter
             double totalNumber = (firstNumber + secondNumber + thirdNumber);
             totalNumber = Math.Round(totalNumber, 2);
 
-            var average = Math.Round((totalNumber / 3), 2);
-            var smallest = Math.Min(firstNumber, Math.Min(secondNumber, thirdNumber));
-            var largest = Math.Max(firstNumber, Math.Max(secondNumber, thirdNumber));
+            double average = Math.Round((totalNumber / 3), 2);
+            double smallest = Math.Min(firstNumber, Math.Min(secondNumber, thirdNumber));
+            double largest = Math.Max(firstNumber, Math.Max(secondNumber, thirdNumber));
+            Console.WriteLine();
             Console.WriteLine("The total number:" + totalNumber);
             Console.WriteLine("The average number:" + average);
             Console.WriteLine("The smallest number:" + smallest);
             Console.WriteLine("The largest number:" + largest);
-
-            var usDollar = totalNumber;
-            var swedKrona = (totalNumber * 9.35);
-            var japYen = Math.Round((totalNumber * 107.33), 0);
-            var thaiBaht = (totalNumber * 30.82);
 
             CultureInfo us = new CultureInfo("en-US");
             CultureInfo swed = new CultureInfo("sv-SE");
             CultureInfo jap = new CultureInfo("ja-JP");
             CultureInfo thai = new CultureInfo("th-TH");
 
-            Console.WriteLine("The amount in US Dollars: " + (us.NumberFormat.CurrencySymbol) + usDollar);
-            Console.WriteLine("The amount in Swedish Krona: " + (swed.NumberFormat.CurrencySymbol) + swedKrona);
-            Console.WriteLine("The amount in Japanese Yen: " + (jap.NumberFormat.CurrencySymbol) + japYen);
-            Console.WriteLine("The amount in Thai Baht: " + (thai.NumberFormat.CurrencySymbol) + thaiBaht);
+            Console.WriteLine();
+            Console.WriteLine("The amount in US Dollars: " + totalNumber.ToString("C", us));
+            Console.WriteLine("The amount in Swedish Krona: " + totalNumber.ToString("C", swed));
+            Console.WriteLine("The amount in Japanese Yen: " + totalNumber.ToString("C", jap));
+            Console.WriteLine("The amount in Thai Baht: " + totalNumber.ToString("C", thai));
             Console.ReadKey();
         }
     }
